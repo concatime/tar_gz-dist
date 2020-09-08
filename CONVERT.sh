@@ -30,7 +30,7 @@ fi
 set "$1" "${1}.tar.gz"
 
 pax -w "$1" | >"$2" pigz -c -11
-rm -fR "$1"
+rm -R "$1"
 
 test -f 'SHA256.txt' || touch 'SHA256.txt'
 <'SHA256.txt' >'SHA256.txt.new' sed "/${2}/d"
