@@ -9,3 +9,4 @@ ec370056dd25da46beed1861238f7d0dfab14153ca3a609cafeaacf022f6d0a3  Linux-PAM-1.5.
 867373fa7a4dda1549497926c06f2c6edd7cd2b0aba9da8d757f4ba10d32b903  libite-2.2.0.tar.gz
 5af8af8e9277ed238d2f8455caedf41329de6295c6b300fa248343999c81f7ac  libuev-2.3.1.tar.gz
 66adcf8902ebd0ed0c7248e62ee00794cbcdc8b072e85da0d9da6b2d9ceebfdc  finit-3.1.99-378456b6.tar.gz
+a00eb6a5a766fd10bdca658f52ca9ce7eaddb17adec7b07286eff05057056689  eudev-3.2.9.tar.gz
