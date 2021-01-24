@@ -1,6 +1,5 @@
-binutils: tar w/o folders + gold LD_RUN_PATH patch
-http://ftp.gnu.org/gnu/binutils/binutils-2.35.1.tar.gz
-https://sourceware.org/bugzilla/show_bug.cgi?id=13764
+binutils: tar w/o folders
+http://ftp.gnu.org/gnu/binutils/binutils-2.36.tar.gz
 
 flex: no direct link w/o redirection
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
