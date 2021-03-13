@@ -25,6 +25,9 @@ http://www.multiprecision.org/downloads/mpc-1.2.1.tar.gz
 mpfr: tar w/o ustar
 https://www.mpfr.org/mpfr-current/mpfr-4.1.0.tar.gz
 
+ncurses: ridiculously old autoconf
+http://invisible-mirror.net/archives/ncurses/ncurses-6.2.tar.gz
+
 openntpd: no directories
 https://ftp.openbsd.org/pub/OpenBSD/OpenNTPD/SHA256
 http://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.2p3.tar.gz
