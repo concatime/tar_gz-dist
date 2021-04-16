@@ -29,7 +29,7 @@ fi
 
 set -- "$1" "${1}.tar.gz"
 
-pax -w "$1" | >"$2" pigz -c -11
+pax -w -x ustar "$1" | >"$2" pigz -c -11
 rm -Rf "$1"
 
 test -f 'SHA256.txt' || touch 'SHA256.txt'
