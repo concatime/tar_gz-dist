@@ -28,6 +28,9 @@ http://www.multiprecision.org/downloads/mpc-1.2.1.tar.gz
 mpfr: tar w/o ustar
 https://www.mpfr.org/mpfr-current/mpfr-4.1.0.tar.gz
 
+mtdef: old autotools
+http://bitmath.org/code/mtdev/mtdev-1.1.6.tar.gz
+
 ncurses: ridiculously old autoconf
 http://invisible-mirror.net/archives/ncurses/ncurses-6.2.tar.gz
 
