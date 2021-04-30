@@ -20,7 +20,7 @@ if test -f "$1"; then
 		exit 1
 	fi
 
-	<"$2" "$CMD" -d | pax -r -p m # FIXME: Preset time instead of overwriting
+	"$CMD" -cd "$2" | pax -r
 	rm "$2"
 elif ! test -d "$1"; then
 	>&2 echo "ARGUMENT ${1} IS NEITHER A FILE NOR A DIRECTORY"
