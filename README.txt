@@ -11,6 +11,9 @@ https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz
 isl: tar w/o ustar
 http://isl.gforge.inria.fr/isl-0.23.tar.gz
 
+libexecinfo: no gz
+http://distcache.freebsd.org/local-distfiles/itetcu/libexecinfo-1.1.tar.bz2
+
 libmnl: no gz
 http://netfilter.org/pub/libmnl/libmnl-1.0.4.tar.bz2
 http://netfilter.org/projects/libmnl/files/libmnl-1.0.4.tar.bz2
