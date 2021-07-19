@@ -2,7 +2,7 @@ alsa-libs: no gz
 https://alsa-project.org/files/pub/lib/alsa-lib-1.2.4.tar.bz2
 
 binutils: no directories
-http://ftp.gnu.org/gnu/binutils/binutils-2.36.1.tar.gz
+http://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.gz
 
 flex: no direct link w/o redirection
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
