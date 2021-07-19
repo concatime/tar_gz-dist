@@ -41,5 +41,8 @@ openntpd: no directories
 https://ftp.openbsd.org/pub/OpenBSD/OpenNTPD/SHA256
 http://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.2p3.tar.gz
 
+tree: no directories
+http://mama.indstate.edu/users/ice/tree/src/tree-1.8.0.tgz
+
 util-linux: no autotools release
 https://gitweb.gentoo.org/proj/eudev.git/snapshot/eudev-3.2.9.tar.gz
