@@ -8,6 +8,9 @@ flex: no direct link w/o redirection
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz
 
+gmp: no gz
+https://gmplib.org/download/gmp/gmp-6.2.1.tar.zst
+
 isl: tar w/o ustar
 http://isl.gforge.inria.fr/isl-0.23.tar.gz
 
