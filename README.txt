@@ -4,7 +4,7 @@ https://alsa-project.org/files/pub/lib/alsa-lib-1.2.4.tar.bz2
 binutils: no directories
 http://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.gz
 
-dng_sdk: inconsitent hash and no root directory
+dng_sdk: inconsistent hash and no root directory
 https://android.googlesource.com/platform/external/dng_sdk/+archive/c8d0c9b1d16bfda56f15165d39e0ffa360a11123.tar.gz
 
 flex: no direct link w/o redirection
@@ -47,7 +47,7 @@ openntpd: no directories
 https://ftp.openbsd.org/pub/OpenBSD/OpenNTPD/SHA256
 http://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.2p3.tar.gz
 
-piex: inconsitent hash and no root directory
+piex: inconsistent hash and no root directory
 https://android.googlesource.com/platform/external/piex/+archive/bb217acdca1cc0c16b704669dd6f91a1b509c406.tar.gz
 
 tree: no directories
@@ -55,3 +55,6 @@ http://mama.indstate.edu/users/ice/tree/src/tree-1.8.0.tgz
 
 util-linux: no autotools release
 https://gitweb.gentoo.org/proj/eudev.git/snapshot/eudev-3.2.9.tar.gz
+
+zlib-chromium: inconsistent hash and no root directory
+https://chromium.googlesource.com/chromium/src/third_party/zlib/+archive/c876c8f87101c5a75f6014b0f832499afeb65b73.tar.gz
