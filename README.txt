@@ -4,6 +4,9 @@ https://alsa-project.org/files/pub/lib/alsa-lib-1.2.4.tar.bz2
 binutils: no directories
 http://ftp.gnu.org/gnu/binutils/binutils-2.37.tar.gz
 
+dng_sdk: inconsitent hash and no root directory
+https://android.googlesource.com/platform/external/dng_sdk/+archive/c8d0c9b1d16bfda56f15165d39e0ffa360a11123.tar.gz
+
 flex: no direct link w/o redirection
 https://github.com/westes/flex/files/981163/flex-2.6.4.tar.gz
 https://github.com/westes/flex/releases/download/v2.6.4/flex-2.6.4.tar.gz
