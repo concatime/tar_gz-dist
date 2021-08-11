@@ -47,6 +47,9 @@ openntpd: no directories
 https://ftp.openbsd.org/pub/OpenBSD/OpenNTPD/SHA256
 http://cdn.openbsd.org/pub/OpenBSD/OpenNTPD/openntpd-6.2p3.tar.gz
 
+piex: inconsitent hash and no root directory
+https://android.googlesource.com/platform/external/piex/+archive/bb217acdca1cc0c16b704669dd6f91a1b509c406.tar.gz
+
 tree: no directories
 http://mama.indstate.edu/users/ice/tree/src/tree-1.8.0.tgz
 
