@@ -28,6 +28,9 @@ libressl: no directories
 https://ftp.openbsd.org/pub/OpenBSD/LibreSSL/SHA256
 http://cdn.openbsd.org/pub/OpenBSD/LibreSSL/libressl-3.3.1.tar.gz
 
+libyuv: inconsistent hash and no root directory
+https://chromium.googlesource.com/libyuv/libyuv/+archive/639dd4ea76403fb2e69df0636ce1df6a9587b004.tar.gz
+
 linux-pam: no direct link w/o redirection
 https://github.com/linux-pam/linux-pam/releases/download/v1.5.1/Linux-PAM-1.5.1.tar.xz
 
