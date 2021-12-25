@@ -1,4 +1,5 @@
-#!/bin/sh -ex
+#!/bin/sh
+set -ex
 
 if test -f "$1"; then
 	set -- "${1%.*.*}" "$1" "${1##*.}"
