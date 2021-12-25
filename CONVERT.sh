@@ -12,29 +12,29 @@ if test -f "$1"; then
 		tgz) CMD='pigz' && set "${2%.*}" "$2" ;;
 		xz)  CMD='xz' ;;
 		zst) CMD='zstd' ;;
-		*)   >&2 echo "UNRECOGNIZED TYPE ${3}" && exit 1 ;;
+		*)   echo "UNRECOGNIZED TYPE ${3}" >&2 && exit 1 ;;
 	esac
 
-	if ! >'/dev/null' command -v "$CMD"; then
-		>&2 echo "COMMAND ${CMD} NOT FOUND"
+	if ! command -v "$CMD" >'/dev/null'; then
+		echo "COMMAND ${CMD} NOT FOUND" >&2
 		exit 1
 	fi
 
 	"$CMD" -cd "$2" | pax -r
 	rm "$2"
 elif ! test -d "$1"; then
-	>&2 echo "ARGUMENT ${1} IS NEITHER A FILE NOR A DIRECTORY"
+	echo "ARGUMENT ${1} IS NEITHER A FILE NOR A DIRECTORY" >&2
 	exit 1
 fi
 
 set -- "$1" "${1}.tar.gz"
 
-pax -w -x ustar "$1" | >"$2" pigz -c -11
+pax -w -x ustar "$1" | pigz -c -11 >"$2"
 rm -Rf "$1"
 
 test -f 'SHA256.txt' || touch 'SHA256.txt'
-<'SHA256.txt' >'SHA256.txt.new' sed "/${2}/d"
+sed "/${2}/d" <'SHA256.txt' >'SHA256.txt.new'
 mv SHA256.txt.new SHA256.txt
 
-set -- "$2" $(<"$2" sha256sum)
->>'SHA256.txt' echo "${2}  ${1}"
+set -- "$2" $(sha256sum <"$2")
+echo "${2}  ${1}" >>'SHA256.txt'
