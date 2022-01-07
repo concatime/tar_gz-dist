@@ -30,6 +30,10 @@ fi
 
 set -- "$1" "${1}.tar.gz"
 
+# ValueError: ZIP does not support timestamps before 1980
+# 315532800
+find "$1" -exec touch -m -t 198001010000 {} \;
+
 pax -w -x ustar "$1" | pigz -c -11 >"$2"
 rm -Rf "$1"
 
