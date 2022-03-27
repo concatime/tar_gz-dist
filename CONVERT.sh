@@ -21,7 +21,7 @@ if test -f "$1"; then
 		exit 1
 	fi
 
-	"$CMD" -cd "$2" | pax -r
+	"$CMD" -dc <"$2" | pax -r
 	rm "$2"
 elif ! test -d "$1"; then
 	echo "ARGUMENT ${1} IS NEITHER A FILE NOR A DIRECTORY" >&2
@@ -34,7 +34,7 @@ set -- "$1" "${1}.tar.gz"
 # 315532800
 find "$1" -exec touch -m -t 198001010000 {} \;
 
-pax -w -x ustar "$1" | pigz -c -11 >"$2"
+pax -w -x ustar "$1" | pigz -c9 >"$2"
 rm -Rf "$1"
 
 test -f 'SHA256.txt' || touch 'SHA256.txt'
