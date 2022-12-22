@@ -7,10 +7,10 @@ if test -f "$1"; then
 	case "$3" in
 		br)  CMD='brotli' ;;
 		bz2) CMD='bzip2' ;;
-		gz)  CMD='pigz' ;;
+		gz)  CMD='gzip' ;;
 		lz)  CMD='lzip' ;;
 		lz4) CMD='lz4' ;;
-		tgz) CMD='pigz' && set "${2%.*}" "$2" ;;
+		tgz) CMD='gzip' && set "${2%.*}" "$2" ;;
 		xz)  CMD='xz' ;;
 		zst) CMD='zstd' ;;
 		*)   echo "UNRECOGNIZED TYPE ${3}" >&2 && exit 1 ;;
@@ -34,7 +34,7 @@ set -- "$1" "${1}.tar.gz"
 # 315532800
 find "$1" -exec touch -m -t 198001010000 {} \;
 
-pax -w -x ustar "$1" | pigz -c9 >"$2"
+pax -w -x ustar "$1" | gzip -9c >"$2"
 rm -Rf "$1"
 
 test -f 'SHA256.txt' || touch 'SHA256.txt'
