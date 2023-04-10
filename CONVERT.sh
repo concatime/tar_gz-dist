@@ -32,9 +32,11 @@ set -- "$1" "${1}.tar.gz"
 
 # ValueError: ZIP does not support timestamps before 1980
 # 315532800
+export TZ=UTC
 find "$1" -exec touch -m -t 198001010000 {} \;
-
 pax -w -x ustar "$1" | gzip -9c >"$2"
+unset TZ
+
 rm -Rf "$1"
 
 test -f 'SHA256.txt' || touch 'SHA256.txt'
